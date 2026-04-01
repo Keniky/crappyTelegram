@@ -96,7 +96,7 @@ class GUI:
     def sendMessage(self,event):
         msg = self.messageArea.get()
         self.writeMyMessage(msg) 
-        self.client.sendMessage(self.name + " : " + msg)
+        self.client.sendMessage(msg)
 #key detector
 #escape to terminate 
     def terminate(self , event = None):
